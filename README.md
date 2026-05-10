@@ -1,2 +1,2 @@
 # Colorful Squares
-Click on the squares to rotate, recolor and resize them!
+Click glowing cubes. Avoid void cubes. Charge the blast.
