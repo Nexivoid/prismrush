@@ -85,4 +85,3 @@ button { border: 0; color: var(--text); font: inherit; }
 @media (max-width: 1040px) { .hud { grid-template-columns: 1fr; } .stats, .actions, .control-panel { width: 100%; } .actions button { flex: 1; } }
 @media (max-width: 880px) { .control-panel { grid-template-columns: 1fr; } .stage-wrap { min-height: 58vh; } .board { width: 88%; gap: 6px; } }
 @media (max-width: 560px) { .shell { padding: 10px; } .hud { padding: 14px; border-radius: 14px; } .stats { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; } .stat { min-width: 0; padding: 8px 6px; } .stat span { font-size: 0.62rem; } .stage-wrap { border-radius: 18px; } .message { border-radius: 14px; } }
-
