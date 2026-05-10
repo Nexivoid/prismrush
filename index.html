@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Squares: Prism Rush</title>
+  <link rel="icon" type="image/png" href="f4v1c0n.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell" aria-label="Colorful Squares Prism Rush game">
+    <section class="hud" aria-label="Game status">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <div>
+          <p class="eyebrow">Colorful Squares</p>
+          <h1>Prism Rush</h1>
+        </div>
+      </div>
+      <div class="stats" aria-live="polite">
+        <div class="stat"><span>Score</span><strong id="score">0</strong></div>
+        <div class="stat"><span>Best</span><strong id="best">0</strong></div>
+        <div class="stat"><span>Combo</span><strong id="combo">x1</strong></div>
+        <div class="stat"><span>Level</span><strong id="level">1</strong></div>
+        <div class="stat"><span>Time</span><strong id="time">60</strong></div>
+      </div>
+      <div class="actions">
+        <button id="startButton" type="button">Start Run</button>
+        <button id="blastButton" type="button" aria-label="Use prism blast">Blast</button>
+        <button id="tiltButton" type="button" aria-pressed="false">Auto Tilt</button>
+      </div>
+    </section>
+
+    <section class="stage-wrap" aria-label="3D game board">
+      <div class="stage-glow" aria-hidden="true"></div>
+      <div class="scan" aria-hidden="true"></div>
+      <div id="stage" class="stage">
+        <div id="board" class="board" aria-label="Clickable cube board"></div>
+      </div>
+      <canvas id="fx" class="fx" aria-hidden="true"></canvas>
+      <div id="message" class="message">Click glowing cubes. Avoid void cubes. Charge the blast.</div>
+    </section>
+
+    <section class="control-panel" aria-label="Controls and objectives">
+      <div>
+        <h2>Target</h2>
+        <p id="targetText">Hit a bright cube to begin a combo chain.</p>
+      </div>
+      <div>
+        <h2>Prism Charge</h2>
+        <div class="meter" aria-label="Prism charge meter"><span id="chargeBar"></span></div>
+        <p id="chargeText">Build energy with clean hits, then fire Blast.</p>
+      </div>
+      <div>
+        <h2>Status</h2>
+        <p id="streakText">Power cubes bend time. Void cubes break combos.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="effects.js"></script>
+  <script src="sound.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
